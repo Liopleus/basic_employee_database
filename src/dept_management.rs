@@ -18,7 +18,7 @@ pub fn create_dept(
     for id in list.keys() {
         sorted_dept_ids.push(*id)
     }
-    let mut id_to_assign = sorted_dept_ids[0];
+    let mut id_to_assign = 0;
     for id in sorted_dept_ids {
         if id == id_to_assign {
             id_to_assign += 1

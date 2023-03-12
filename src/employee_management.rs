@@ -23,7 +23,7 @@ pub fn add_employee(
         used_id.push(*id)
     }
     used_id.sort();
-    let mut id_to_be_assigned: u32 = used_id[0];
+    let mut id_to_be_assigned: u32 = 1;
     for id in used_id {
         if id_to_be_assigned == id {
             id_to_be_assigned += 1
